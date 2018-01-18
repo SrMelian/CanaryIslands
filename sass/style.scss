@@ -1,0 +1,88 @@
+#gallery {
+    min-height: 12em;
+    background-color: #6EEEE9;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.gallery.custom-state-active {
+    background: #eee;
+}
+
+.gallery li {
+    float: left;
+    height: 80px;
+    padding: 0.4em;
+    margin: 0 0.4em 0.4em 0;
+    a.ui-icon-zoomin {
+        float: left;
+    }
+    img {
+        height: 100%;
+        cursor: move;
+    }
+}
+
+.container {
+    text-align: center;
+}
+
+.circle {
+    height: 64px;
+    width: 64px;
+}
+
+div.ui-dialog {
+    width: initial !important;
+}
+
+#islands {
+    padding: 20px;
+    margin-top: 100px;
+    li {
+        list-style: none;
+        float: left;
+        height: 40px;
+        img {
+            height: 100%;
+        }
+    }
+    &>div {
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        background-repeat: no-repeat;
+        border: solid 2px;
+        border-radius: 15px;
+        margin: 15px;
+    }
+}
+
+#lanzarote {
+    background-image: url("../images/islands/lanzarote.png");
+}
+
+#laPalma {
+    background-image: url("../images/islands/laPalma.png");
+}
+
+#fuerteventura {
+    background-image: url("../images/islands/fuerteventura.png");
+}
+
+#tenerife {
+    background-image: url("../images/islands/tenerife.png");
+}
+
+#granCanaria {
+    background-image: url("../images/islands/granCanaria.png");
+}
+
+#laGomera {
+    background-image: url("../images/islands/laGomera.png");
+}
+
+#elHierro {
+    background-image: url("../images/islands/elHierro.png");
+}

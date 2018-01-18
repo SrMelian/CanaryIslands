@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="jquery-ui-1.12.1\jquery-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Canarias y sus paisajes</title>
+</head>
+
+<body>
+    <div id="wrapper" class="">
+        <!-- Navbar goes here -->
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo center">Canarias y sus paisajes</a>
+            </div>
+        </nav>
+        <!-- Page Layout here -->
+        <div class="row">
+            <div class="col s12 m5 l5" id="sideBar">
+                <!-- Grey navigation panel-->
+                <ul>
+                    <li>
+                        <div class="user-view center-align">
+                            <p>
+                                <img class="circle" src="images/account.png">
+                            </p>
+                            <p>
+                                <span class="name user-name">UserName</span>
+                            </p>
+                            <p>
+                                Puntuación:
+                                <span class="score">0</span>
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="divider"></div>
+                    </li>
+
+                    <ul id="gallery" class="gallery ui-helper-reset ui-helper-clearfix"></ul>
+                </ul>
+            </div>
+
+            <div class="col s12 m7 l7">
+                <!-- Teal page content-->
+                <div id="islands">
+                    <div id="lanzarote" class="island" data-name="Lanzarote"></div>
+                    <div id="laPalma" class="island" data-name="La Palma"></div>
+                    <div id="fuerteventura" class="island" data-name="Fuerteventura"></div>
+                    <div id="tenerife" class="island" data-name="Tenerife"></div>
+                    <div id="granCanaria" class="island" data-name="Gran Canaria"></div>
+                    <div id="laGomera" class="island" data-name="La Gomera"></div>
+                    <div id="elHierro" class="island" data-name="El Hierro"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <a id="checkButton" class="waves-effect waves-light btn">
+                    <i class="material-icons left">done</i>Comprobar</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalForm" class="modal">
+        <div class="modal-content container">
+            <h4>Canarias y sus paisajes</h4>
+            <form id="signUpForm" action="#">
+                <p>
+                    <label for="name">Introduzca su nombre:</label>
+                    <br>
+                    <input type="text" name="name" id="name" class="left" maxlength="100" />
+                </p>
+
+                <p>
+                    <span>Seleccione dificultad:</span>
+                </p>
+
+                <p>
+                    <input name="difficulty" type="radio" id="easy" value="easy" />
+                    <label for="easy">Fácil</label>
+                </p>
+                <p>
+                    <input name="difficulty" type="radio" id="medium" value="medium" />
+                    <label for="medium">Intermedio</label>
+                </p>
+                <p>
+                    <input name="difficulty" type="radio" id="hard" value="hard" />
+                    <label for="hard">Difícil</label>
+                </p>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <div class="center-align">
+                <a id="start" class="waves-effect waves-green btn">Comenzar</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalCheckAnswers" class="modal">
+        <div class="modal-content container">
+            <form id="checkAnswersForm" action="#">
+                <h4>¿Desea comprobar sus respuestas?</h4>
+                <a id="yesButton" class="waves-effect waves-light btn">
+                    <i class="material-icons left">done</i>Sí</a>
+                <a id="noButton" class="waves-effect waves-light btn">
+                    <i class="material-icons left">close</i>No</a>
+            </form>
+            <div class="center-align">
+                <p id="finalMessageScore">
+                    <span class="user-name"></span>, tienes
+                    <span class="score">0</span> puntos.
+                </p>
+            </div>
+            <div id="restart" class="center-align">
+                <h4>¿Quieres jugar de nuevo?</h4>
+                <a id="yesButtonRestart" class="waves-effect waves-light btn">
+                    <i class="material-icons left">done</i>Sí</a>
+                <a id="noButtonRestart" class="waves-effect waves-light btn">
+                    <i class="material-icons left">close</i>No</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="finishModal" class="modal">
+        <div class="modal-content container">
+            <h1>Gracias por jugar</h1>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
