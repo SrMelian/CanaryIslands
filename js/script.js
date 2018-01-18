@@ -86,7 +86,7 @@ function start() {
 function allFieldsAreFilled(name, difficulty) {
     let regExp = /^[a-zA-Z\s]*$/;
     let checked = false;
-    if (regExp.test(name)) {
+    if (regExp.test(name) && name != '') {
         if (difficulty.length != 0) {
             checked = true;
         }
