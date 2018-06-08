@@ -5,4 +5,4 @@ Training Project
 https://srmelian.github.io/canarias/
 
 ## Description
-Mini-Game made it with JS, JQueru UI to Drag & Drop and Toasts, [Materialize](https://materializecss.com/)
+Mini-Game made it with JS, JQuery UI to Drag & Drop and Toasts, [Materialize](https://materializecss.com/)
